@@ -68,8 +68,11 @@ const getusers = async () => {
 
                         const html = `
                         <div class="userpost" style="margin-bottom:20px">
+
                              <strong> ${item.id}</strong>
+
                             <h5> Title: </h5>
+
                             ${item.title}
 
                             <h5> Body: </h5>
@@ -88,16 +91,6 @@ const getusers = async () => {
         btnCloseModal.addEventListener('click', closeModel);
         
         overlay.addEventListener('click',closeModel);
-
-
-
-        // const btn = document.querySelector('.show-modal');
-
-        
-        // btn.addEventListener('click', async () => {
-
-                           
-        // })
 
     })
     .catch(err => console.log(err))
